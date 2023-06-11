@@ -8,6 +8,13 @@ el sistema nos va a informar que eso se debe a un posible incendio, nuestro sist
 sobre ellas. Mostrando un mensaje de alerta en nuestra pantalla, prendiendo luces de emergencia (leds) y por ultimo activando
 nuestro servo.__
 
+## __LINK DE NUESTRO PROYECTO__ 
+
+*https://www.tinkercad.com/things/2biwFEkgaqP-proyecto-arduino-tp/editel?sharecode=mEKRhrUSIB1Xx4QhVbxixccj9bI0TIjpVwD_kPZZNTA
+
+
+
+
 ## El circuito esta compuesto con los siguientes componentes:
 
 * Arduino Uno
@@ -140,9 +147,7 @@ A continuacion mostraremos el maximo de temperatura por estacion del año.
 # __DIAGRAMA ESQUEMATICO DEL CIRCUITO__
 
 
-
-
-
+![ESQUEMA](https://github.com/Pandrada0/TP_SPD/assets/108838669/3ea10dd4-ee0c-4844-ae53-3161b9c91dbf)
 
 
 
