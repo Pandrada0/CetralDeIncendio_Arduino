@@ -25,5 +25,15 @@ nuestro servo.__
 
 
 
-## 
+## __Importamos nuestras  librerias__
+```
+```
+#include <Servo.h>
+#include <IRremote.h>
+#include <LiquidCrystal.h>
+"""
+
+
+
+
 
