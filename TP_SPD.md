@@ -28,13 +28,12 @@ nuestro servo.__
 * 2 Placas de prueba
 
 
-![](proyecto.PNG)
+![proyectofinal](https://github.com/Pandrada0/TP_SPD/assets/108838669/8ede3f32-fcee-47c2-b1fa-b89beff27c29)
 
 
 
 ## __Importamos nuestras librerias__
 ```
-
 #include <Servo.h>
 #include <IRremote.h>
 #include <LiquidCrystal.h>
