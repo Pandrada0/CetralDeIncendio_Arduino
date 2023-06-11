@@ -32,15 +32,15 @@ nuestro servo.__
 
 
 
-##__Importamos nuestras  librerias__
+## __Importamos nuestras librerias__
 ```
-```
+
 #include <Servo.h>
 #include <IRremote.h>
 #include <LiquidCrystal.h>
-"""
+```
 
-## __Nuestrso objetos__
+## __NuestroS objetos__
 
 ```
 LiquidCrystal lcd (2,3,4,5,6,7);
