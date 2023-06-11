@@ -24,7 +24,7 @@ nuestro servo.__
 * Control Remoto IR
 * Micro Servomoto
 * 2 led
-* 3 Resistencias de (220)
+* 3 Resistencias de (220oh)
 * 2 Placas de prueba
 
 
