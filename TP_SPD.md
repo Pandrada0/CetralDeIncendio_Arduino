@@ -25,13 +25,124 @@ nuestro servo.__
 
 
 
-## __Importamos nuestras  librerias__
+##__Importamos nuestras  librerias__
 ```
 ```
 #include <Servo.h>
 #include <IRremote.h>
 #include <LiquidCrystal.h>
 """
+
+## __Nuestrso objetos__
+
+```
+LiquidCrystal lcd (2,3,4,5,6,7);
+Servo miServo;
+```
+* Creamos el objeto LCD el cual le asignamos los pines a los cuales los conectamos en el arduino.
+* Creamos el objeto miServo el cual luego utilizaremos en nuestro codigo.
+
+## __Nuestro SETUP__
+
+```
+  IrReceiver.begin(IR, DISABLE_LED_FEEDBACK);
+  lcd.begin(16,2);
+  miServo.attach(pinServo);
+  miServo.write(0);
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+```
+
+* Asignamos nuestro sensor IR
+* Asignamos el tamaño de nuestro LCD
+* Asignamos el pin del arduino donde esta conectado el servo
+* Le damos una posicion inicial al servo
+* Configuramos las luces de emergencia(leds)
+
+
+
+## __Nuestras Funciones__
+
+__Las funciones tiene el objetivo de hacer nuestro codigo las legible y ordenado.
+Cada una de ellas tiene una funcion dentro de nuestro codigo.__
+
+```
+void mostrarTMP(int temperatura);
+```
+* Muestra la temperatura recibida del sensor en el LCD
+
+```
+void detectarIncendio(int temperatura,int estacion);
+```
+* Interpreta segun la temperatura y la estacion si existe la posibilidad de un incendio
+
+```
+void mostrarEstacion(int boton);
+```
+* Esta funcion se encaga de mostrar en la pantalla la estacion segun el boton de control IR
+
+```
+void encenderServo();
+```
+* Esta funcion se encarga de prender el servo cuando se detecta un incendio
+
+```
+void encenderLed();
+```
+* Esta funcion se encarga de prender los leds cuando se detecta un incendio
+
+
+## __Nuestro LOOP__
+```
+ temperatura = map(analogRead(TMP),0,1023,-50,450);  
+  mostrarTMP(temperatura);
+  
+  if (IrReceiver.decode()){ 
+    switch(IrReceiver.decodedIRData.decodedRawData){
+      case boton1:
+        mostrarEstacion(1);
+        flag = 1;
+      	break;
+      case boton2:
+      	mostrarEstacion(2);
+        flag = 2;
+        break;
+      case boton3:
+      	mostrarEstacion(3);
+        flag = 3;;
+        break;
+      case boton4:
+     	mostrarEstacion(4);
+        flag = 4;
+        break; 
+     }
+  }
+  IrReceiver.resume();
+  detectarIncendio(temperatura,flag);
+```
+
+Nuestro loop se encarga de mostrar la temperatura en el momento que la lee llamando a la funcion __mostrarTMP__. 
+Luego decodifica lo recibido atravez del sensor IR, dependiendo del boton llamando a la funcion __mostrarEstacion__.
+
+* Opcion1: Verano
+* Opcion2: Otoño
+* Opcion3: Invierno
+* Opcion4: Primavera
+
+Dependiendo la estacion del año tenemos un margen de temperatura antes de detectar un posible incendio. 
+A continuacion mostraremos el maximo de temperatura por estacion del año.
+
+* Verano: 42 grados
+* Otoño: 25 grados
+* Invierno: 20 grados
+* Primavera: 30 grados
+
+# __DIAGRAMA ESQUEMATICO DEL CIRCUITO__
+
+
+
+
+
 
 
 
