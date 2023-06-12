@@ -135,13 +135,25 @@ Luego decodifica lo recibido atravez del sensor IR, dependiendo del boton llaman
 * Opcion3: Invierno
 * Opcion4: Primavera
 
+![botones](https://github.com/Pandrada0/TP_SPD/assets/108838669/4570bcbc-1d2b-4b6e-a983-d52db321a85f)
+
+
 Dependiendo la estacion del año tenemos un margen de temperatura antes de detectar un posible incendio. 
 A continuacion mostraremos el maximo de temperatura por estacion del año.
+
+![temperatura](https://github.com/Pandrada0/TP_SPD/assets/108838669/34af19b7-9679-4957-8f41-174fa192a392)
 
 * Verano: 42 grados
 * Otoño: 25 grados
 * Invierno: 20 grados
 * Primavera: 30 grados
+
+
+
+# __MENSAJE ALERTA INCENDIO__
+
+![incendio](https://github.com/Pandrada0/TP_SPD/assets/108838669/e2bd0d0a-ebea-4671-8751-5f69507f6a59)
+
 
 # __DIAGRAMA ESQUEMATICO DEL CIRCUITO__
 
