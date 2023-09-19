@@ -13,8 +13,6 @@ nuestro servo.__
 https://www.tinkercad.com/things/2biwFEkgaqP-proyecto-arduino-tp/editel?sharecode=mEKRhrUSIB1Xx4QhVbxixccj9bI0TIjpVwD_kPZZNTA
 
 
-
-
 ## El circuito esta compuesto con los siguientes componentes:
 
 * Arduino Uno
