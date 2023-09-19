@@ -8,7 +8,7 @@ el sistema nos va a informar que eso se debe a un posible incendio, nuestro sist
 sobre ellas. Mostrando un mensaje de alerta en nuestra pantalla, prendiendo luces de emergencia (leds) y por ultimo activando
 nuestro servo.__
 
-## __LINK DE NUESTRO PROYECTO__ 
+## __LINK DEL PROYECTO__ 
 
 https://www.tinkercad.com/things/2biwFEkgaqP-proyecto-arduino-tp/editel?sharecode=mEKRhrUSIB1Xx4QhVbxixccj9bI0TIjpVwD_kPZZNTA
 
